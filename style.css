@@ -1,0 +1,55 @@
+body{
+  font-size: 13px;
+  line-height: 1.45555;
+  font-family: Arial, Sans;
+}
+
+h1 {
+  font-size: 21px;
+  margin-left: 0px;
+}
+#container { width: 400px; }
+ul { padding: 0;  margin: 0;}
+li {
+    padding: 0;
+    float: left;
+    margin: 10px;
+    list-style: none;
+    outline: solid;
+    width: 80px;
+    height: 80px;
+    position: relative;
+    text-align: center;
+    padding-top: 30px;
+    box-sizing: border-box;
+}
+
+li .layer{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: #1abc9c;
+  left: 0;
+  top: 0;
+}
+
+li .layer.flipped{
+  background: transparent;
+}
+
+li .layer.flipped.matched {
+    background: #bdc3c7;
+    z-index: -1;
+}
+
+.gridGen{
+  width: 400px;
+}
+
+.cell{
+    width: 78px;
+    margin: 10px;
+    border: 1px solid #080404;
+    height: 80px;
+    display: inline-block;
+}
